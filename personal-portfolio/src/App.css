@@ -97,6 +97,11 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
+.circle-image {
+  border-radius: 50%; /* Make the image circular */
+  width: 50px; /* Set the image width */
+  height: 50px; /* Set the image height */
+}
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
