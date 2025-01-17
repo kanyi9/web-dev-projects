@@ -20,6 +20,8 @@ export const Footer = () => {
                 <a href="https://github.com/kanyi9"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
+            <p>0111991618</p>
+            <p>peterkanyi19193@gmail.com</p>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
