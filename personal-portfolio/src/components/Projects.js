@@ -312,9 +312,9 @@ export const Projects = () => {
                   <p>Explore some of my featured projects, showcasing my skills in full-stack development and problem-solving.</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center">
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="first">All Projects</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
