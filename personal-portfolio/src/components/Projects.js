@@ -204,7 +204,10 @@ export const Projects = () => {
     },
     {
       title: "FoodBridge",
-      description: `An online platform for buying and selling products, featuring user-friendly navigation and secure payment options.`,
+      description: `Foodbridge is a fullstack web application that aims to bridge the gap by creating a streamlined
+                            user-friendly platform that connects donors, volunteers and those in need , thereby reducing 
+                            food insecurity and promoting healthier communities.
+      Technologies used: React, flask, SQL Alchemy, JWT, flask mail, Tailwind css                      `,
       imgUrl: projImg2,
       liveLink: "https://foodbridge-project.vercel.app/", // Replace with your live link
     },
