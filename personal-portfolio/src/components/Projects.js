@@ -276,6 +276,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   const projects = [
@@ -286,7 +287,7 @@ export const Projects = () => {
       and images of the cars they would want to purchase. 
       Technologies used: React in frontend, Python and Flask API backend.`,
       imgUrl: projImg1,
-      liveLink: "https://gari-zetu.vercel.app/", 
+      Link: "https://gari-zetu.vercel.app/", 
     },
     {
       title: "FoodBridge",
@@ -295,7 +296,7 @@ export const Projects = () => {
                             food insecurity and promoting healthier communities.
       Technologies used: React, Flask, SQLAlchemy, JWT, Flask Mail, Tailwind CSS.`,
       imgUrl: projImg2,
-      liveLink: "https://foodbridge-project.vercel.app/", 
+      Link: "https://foodbridge-project.vercel.app/", 
     },
   ];
 
@@ -330,9 +331,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="Background" />
+      {/* <img className="background-image-right" src={colorSharp2} alt="Background" /> */}
     </section>
   );
 };
-
-

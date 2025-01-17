@@ -341,6 +341,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.project {
+  padding: 0 0 50px 0; /* Adjust the padding value to your desired space */
+  position: relative;
+}
 /* Project Card Container */
 .proj-imgbx {
   position: relative;
@@ -386,6 +390,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   gap: 40px; /* Spacing between cards */
+ 
 }
 
 /* Responsive Adjustments */
