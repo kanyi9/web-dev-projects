@@ -14,7 +14,7 @@ export const Newsletter = () => {
           <Col lg={6} md={6} xl={7}>
             <div className="experience-section">
               <h3>Experience</h3>
-              <p className="custom-text">2024-Present</p>
+              <p className="custom-text">2023-Present</p>
               <h3 className="custom-heading">Full Stack Developer</h3>
               <p className="custom-text">Moringa School</p>
               <p className="custom-text">Led a team in developing and maintaining web applications using JavaScript, React.js, and Flask. Implemented RESTful APIs and integrated with Postgres databases. Collaborated with stakeholders to define project requirements and timelines.</p>
