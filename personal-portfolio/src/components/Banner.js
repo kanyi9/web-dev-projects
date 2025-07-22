@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [  "Full stack developer","Web Developer", "UI/UX Designer" ];
+  const toRotate = ["Full stack developer", "Web Developer", "UI/UX Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -45,38 +45,55 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
+
+  const cvLink = 'https://drive.google.com/file/d/1YoY--Au1b651RiQSUIdqdVk6nmPBdsri/view?usp=drive_link'; // Replace with your actual CV link
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Peter Kanyi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Peter Kanyi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Passionate and innovative thinker with a track record of building full stack applications and front-end using Python, Flask,
-React, Java Script and restful API architecture. Proficient in Python with Flask and JavaScript-based programming, with a
-strong background in team building and project management. Skilled in frontend design, with expertise in UI/UX
-principles, responsive design, and CSS frameworks like Bootstrap and Tailwind CSS. Experienced in state management
-and proficient in build tools like Webpack. Committed to accessibility compliance and passionate about delivering
-exceptional user experiences</p>
+                    React, JavaScript and restful API architecture. Proficient in Python with Flask and JavaScript-based programming, with a
+                    strong background in team building and project management. Skilled in frontend design, with expertise in UI/UX
+                    principles, responsive design, and CSS frameworks like Bootstrap and Tailwind CSS. Experienced in state management
+                    and proficient in build tools like Webpack. Committed to accessibility compliance and passionate about delivering
+                    exceptional user experiences.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                  <a 
+                    href={cvLink} 
+                    download 
+                    style={{
+                      display: 'inline-block',
+                      marginTop: '20px',
+                      padding: '10px 20px',
+                      backgroundColor: '#25D366',
+                      color: 'white',
+                      borderRadius: '5px',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    Download My CV
+                  </a>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
